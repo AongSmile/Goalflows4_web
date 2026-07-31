@@ -8,9 +8,10 @@ const goalflows = () => {
   return (
     <>
       <Layoutgoalflows1 />
-      <Layoutgoalflows2 />
-       <Clients />
-       <ArticleSection />
+      {/* <Layoutgoalflows2 /> */}
+      <ArticleSection />
+      <Clients />
+
     </>
   )
 }
