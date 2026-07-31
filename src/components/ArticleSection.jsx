@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getStorefrontArticles } from "../api/productApi";
+import bg1 from "../assets/image/goalflows/PAGE02.03BG.png"
 
 // "ข่าวสาร / บทความน่ารู้" section on the "เกี่ยวกับโกลโฟล" page (spec section
 // 3) - pulls published Articles from the admin panel via
@@ -18,11 +19,32 @@ const ArticleSection = () => {
   }, []);
 
   return (
-    <section className="bg-gray-50 py-12 md:py-16 px-4">
+   // <section className="bg-gray-50 py-12 md:py-16 px-4">
+      <section
+      className="
+    relative 
+    pt-[ุ80px] md:pt-[60px]
+
+    min-h-[400px] md:min-h-[600px]
+
+    bg-no-repeat
+
+    /* 📱 Mobile (คงเดิม) */
+    bg-right-top
+    bg-contain
+
+    /* 💻 Desktop */
+    md:bg-left-top
+    md:bg-cover
+
+    bg-[#f3f4f6]
+  "
+      style={{ backgroundImage: `url(${bg1})` }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#003b6e]">
-            ข่าวสาร / บทความน่ารู้
+            {/* ข่าวสาร / บทความน่ารู้ */}
           </h2>
         </div>
 
