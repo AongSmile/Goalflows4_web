@@ -1,0 +1,34 @@
+const mockProducts = [
+  {
+    id: 1,
+    name: "Industrial Motor",
+    image: "../assets/img/tim-smith.png",
+  },
+  {
+    id: 2,
+    name: "Digital Caliper",
+    image: "../assets/img/tim-smith.png",
+  },
+  {
+    id: 3,
+    name: "Laser Level",
+    image: "../assets/img/tim-smith.png",
+  },
+  {
+    id: 4,
+    name: "Cordless Drill",
+    image: "../assets/img/tim-smith.png",
+  },
+  {
+    id: 5,
+    name: "Robotic Arm",
+    image: "../assets/img/tim-smith.png",
+  },
+  {
+    id: 6,
+    name: "Air Compressor",
+    image: "../assets/img/tim-smith.png",
+  },
+];
+
+export default mockProducts;

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+@import "tailwindcss";
+
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.clip-left {
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
+}
+.overlay-diagonal {
+  width: 58%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 60, 102, 0.97),
+    rgba(11, 60, 102, 0.97)
+  );
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 100s linear infinite;  /* ช้า */
+}
