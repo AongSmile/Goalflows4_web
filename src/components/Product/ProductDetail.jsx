@@ -200,7 +200,7 @@ const ProductDetail = () => {
                     : "text-gray-500 hover:text-[#003b6e]"
                 }`}
               >
-                Standard Delivery
+                More Information
               </button>
             )}
           </div>
