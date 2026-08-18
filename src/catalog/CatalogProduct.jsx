@@ -9,7 +9,7 @@ function CatalogProduct() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("https://fakestoreapi.com/products"); // 🔥 เปลี่ยนเป็น API จริงได้
+        const res = await fetch("https://www.goalflow4.com/products"); // 🔥 เปลี่ยนเป็น API จริงได้
         if (!res.ok) throw new Error("โหลดข้อมูลไม่สำเร็จ");
 
         const data = await res.json();
