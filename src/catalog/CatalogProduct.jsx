@@ -1,115 +1,83 @@
-import React, { useEffect, useState } from "react";
+import { Children, useState } from "react";
+import { FaLine, FaFacebook } from "react-icons/fa6";
+import { motion, useScroll, useTransform } from "framer-motion";
+import bgImage from "../assets/image/bg/PAGE05.png";
+import mitutoyo from "../assets/image/catalog/mitutoyo.png"
 
-function CatalogProduct() {
-  const [products, setProducts] = useState([]);
-  const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch("https://www.goalflow4.com/products"); // 🔥 เปลี่ยนเป็น API จริงได้
-        if (!res.ok) throw new Error("โหลดข้อมูลไม่สำเร็จ");
-
-        const data = await res.json();
-        setProducts(data);
-      } catch (err) {
-        setError("เกิดข้อผิดพลาดในการโหลดข้อมูล");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
-  // filter search
-  const filtered = products.filter((item) =>
-    item.title?.toLowerCase().includes(search.toLowerCase())
-  );
+export default function Contactus() {
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-24 pb-12">
-      <div className="container mx-auto max-w-[1320px] px-6">
-
+    <section className="relative overflow-hidden py-4 min-h-[100vh] sm:min-h-[90vh]">
+      {/* 🌫️ Background Parallax Layer 2 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
         {/* HEADER */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-10">
-          <h1 className="text-3xl font-bold text-gray-800">
-            🛒 Catalog Product
-          </h1>
-
-          {/* SEARCH */}
-          <input
-            type="text"
-            placeholder="ค้นหาสินค้า..."
-            className="w-full md:w-[300px] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-
-        {/* LOADING */}
-        {loading && (
-          <p className="text-center text-gray-500">กำลังโหลดสินค้า...</p>
-        )}
-
-        {/* ERROR */}
-        {error && (
-          <p className="text-center text-red-500">{error}</p>
-        )}
-
-        {/* GRID */}
-        {!loading && !error && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            {filtered.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group"
-              >
-                {/* IMAGE */}
-                <div className="h-[220px] flex items-center justify-center bg-gray-100 p-4">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    onError={(e) =>
-                      (e.target.src =
-                        "https://via.placeholder.com/200x200?text=No+Image")
-                    }
-                    className="h-full object-contain group-hover:scale-105 transition"
-                  />
-                </div>
-
-                {/* CONTENT */}
-                <div className="p-4">
-                  <h2 className="text-sm font-semibold text-gray-800 line-clamp-2">
-                    {item.title}
-                  </h2>
-
-                  <p className="text-blue-600 font-bold mt-2">
-                    ฿ {item.price}
-                  </p>
-
-                  <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                    ดูรายละเอียด
-                  </button>
-                </div>
-              </div>
-            ))}
-
-          </div>
-        )}
-
-        {/* NO RESULT */}
-        {!loading && filtered.length === 0 && (
-          <p className="text-center text-gray-500 mt-10">
-            😅 ไม่พบสินค้าที่ค้นหา
+        <motion.dev
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 uppercase drop-shadow-sm">
+            Catalog Product
+          </h2>
+          <p className="text-gray-600 text-lg mt-2">
+            แคตตาล็อกสินค้า
           </p>
-        )}
+        </motion.dev>
+        {/* MAIN GRID*/}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+          {/* LEFT : MAP + CONTACT INFO */}
+          {/* แคต 1 */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-white/70 backdrop-blur-md shadow-2xl rounded-2xl p-8 border border-white/40"
+          >
+            <img src={mitutoyo} className="py-2" alt="" />
+            <div className="text-center">
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
+              >
+                <a href="https://online.anyflip.com/yctny/nsao/mobile/index.html?1602822912753" target="_blank" rel="noopener noreferrer">Read me</a>
+              </motion.button>
+            </div>
+          </motion.div>
+          {/* แคต1 */}
 
+          {/* RIGHT : CONTACT FORM */}
+          {/* แคต2 */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-white/70 backdrop-blur-md shadow-2xl rounded-2xl p-8 border border-white/40"
+          >
+
+            <div className="text-center">
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
+              >
+
+                <a href="#">Read me</a>
+              </motion.button>
+            </div>
+          </motion.div>
+          {/* แคต2 */}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default CatalogProduct;
+
+
+
