@@ -3,6 +3,7 @@ import { FaLine, FaFacebook } from "react-icons/fa6";
 import { motion, useScroll, useTransform } from "framer-motion";
 import bgImage from "../assets/image/bg/PAGE05.png";
 import mitutoyo from "../assets/image/catalog/mitutoyo.png"
+import cataloggf from "../assets/image/catalog/catalog-gf.png"
 
 export default function Contactus() {
 
@@ -67,7 +68,7 @@ export default function Contactus() {
                 className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
               >
 
-                <a href="#">Read me</a>
+                 <a href="https://anyflip.com/ajihg/tzlr" target="_blank" rel="noopener noreferrer">Read me</a>
               </motion.button>
             </div>
           </motion.div>
