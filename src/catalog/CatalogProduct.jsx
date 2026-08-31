@@ -59,7 +59,7 @@ export default function Contactus() {
             viewport={{ once: true }}
             className="bg-white/70 backdrop-blur-md shadow-2xl rounded-2xl p-8 border border-white/40"
           >
-
+          <img src={cataloggf} className="py-2" alt="" />
             <div className="text-center">
               <motion.button
                 type="submit"
