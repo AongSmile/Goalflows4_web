@@ -14,6 +14,7 @@ const Home = () => {
       {/* <Navbar /> */}
       <Header />
       <Productforsale />
+      <Productsoffered/>
       <Community />
       <OurCustomer/>
       {/* <Pixelgrade /> */}
