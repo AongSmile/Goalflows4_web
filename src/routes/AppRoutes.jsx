@@ -250,7 +250,6 @@ const router = createBrowserRouter([
       { path: "AnimalBalance", element: <Navigate to="/products/animal-balance" replace /> },
       { path: "HospitalBalance", element: <Navigate to="/products/hospital-balance" replace /> },
       { path: "Videomeasuring", element: <Navigate to="/products/products/pvideomeasuring" replace /> },
-
     ],
   },
 ]);
@@ -262,5 +261,4 @@ const AppRoutes = () => {
     </>
   );
 };
-
 export default AppRoutes;
