@@ -7,6 +7,7 @@ import Community from '../components/Community'
 import Pixelgrade from '../components/Pixelgrade'
 import Clients from '../components/Clients'
 import OurCustomer from '../components/OurCustomer'
+import Productsoffered from '../components/Productsoffered'
 
 const Home = () => {
   return (
