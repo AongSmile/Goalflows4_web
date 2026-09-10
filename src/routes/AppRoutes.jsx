@@ -12,6 +12,7 @@ import Contactus from "../components/Contactus";
 import CatalogProduct from "../catalog/CatalogProduct";
 import Workandservices from "../pages/Workandservices";
 import Goalflows from "../pages/Goalflows";
+import Productsoffered from "../components/Productsoffered";
 
 // ----------------------------------------------------------------------------
 // All product listing & detail pages (previously ~130 separate components,
@@ -105,6 +106,7 @@ const router = createBrowserRouter([
       { path: "Catalog", element: <CatalogProduct /> },
       { path: "Workandservices", element: <Workandservices /> },
       { path: "Goalflows", element: <Goalflows /> },
+      { path: "Productsoffered", element: <Productsoffered /> },
 
       // ---- New, consolidated product routes ----
       // Listing: /products/products/phardness, /products/industrial-balance, /products/small-tools/pmitutoyo ...
