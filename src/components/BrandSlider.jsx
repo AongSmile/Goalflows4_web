@@ -171,16 +171,45 @@ function BrandColumn({ brands, direction }) {
 }
 
 
-export default function BrandSlider() {
-  return (
-    <section className="py-10">
-      <div className="h-[32rem] grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* ซ้ายเลื่อนขึ้น */}
-        <BrandColumn brands={leftBrands} direction="up" />
+// export default function BrandSlider() {
+//   return (
+//     <section className="py-10">
+//       <div className="h-[32rem] grid grid-cols-1 md:grid-cols-2 gap-10">
+//         {/* ซ้ายเลื่อนขึ้น */}
+//         <BrandColumn brands={leftBrands} direction="up" />
 
-        {/* ขวาเลื่อนลง */}
-        <BrandColumn brands={rightBrands} direction="down" />
-      </div>
-    </section>
-  );
+//         {/* ขวาเลื่อนลง */}
+//         <BrandColumn brands={rightBrands} direction="down" />
+//       </div>
+//     </section>
+//   );
+// }
+
+export default function BrandSlider() {
+    return (
+        <section className="w-full h-[500px] md:h-[600px] lg:h-[700px] m-0 p-0">
+            <div
+                className="
+                    w-full
+                    h-full
+                    grid
+                    grid-cols-1
+                    md:grid-cols-2
+                    gap-4
+                    m-0
+                    p-0
+                "
+            >
+                <BrandColumn
+                    brands={leftBrands}
+                    direction="up"
+                />
+
+                <BrandColumn
+                    brands={rightBrands}
+                    direction="down"
+                />
+            </div>
+        </section>
+    );
 }
