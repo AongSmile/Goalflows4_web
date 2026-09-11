@@ -65,7 +65,7 @@ const Productsoffered = () => {
         md:-translate-y-6
         grid
         grid-cols-1
-        md:grid-cols-2
+        md:grid-cols-3
         gap-0
         md:gap-0
         items-center
