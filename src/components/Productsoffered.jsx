@@ -1,7 +1,8 @@
 import React from "react";
 import company1 from "../assets/image/productsoffered/BG.01.03.png";
-import product1 from "../assets/image/productsoffered/BG.01.02.2.png";
-import product2 from "../assets/image/productsoffered/BG.01.02.3.png";
+import product1 from "../assets/image/productsoffered/BG.01.02.1.png";
+import product2 from "../assets/image/productsoffered/BG.01.02.2.png";
+import product3 from "../assets/image/productsoffered/BG.01.02.3.png";
 import bgSection from "../assets/image/productsoffered/BG.01.02.png";
 
 const Productsoffered = () => {
@@ -110,10 +111,29 @@ const Productsoffered = () => {
             "
                         />
                     </div>
+                                        {/* PRODUCT 3 */}
+                    <div className="w-full flex justify-center md:justify-start">
+                        <img
+                            src={product3}
+                            alt="Product 3"
+                            className="
+                w-full
+                max-w-[520px]
+                sm:max-w-[550px]
+                md:max-w-[520px]
+                lg:max-w-[560px]
+                h-auto
+                object-contain
+                transition-transform
+                duration-500
+                hover:scale-[1.02]
+            "
+                        />
+                    </div>
                 </div>
             </div>
         </section>
     );
 };
 
-export default Productsoffered;
+export default Productsoffered;3
