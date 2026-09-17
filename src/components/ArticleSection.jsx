@@ -65,7 +65,7 @@ const ArticleSection = () => {
                   <img
                     src={article.images[0].secure_url}
                     alt={article.name}
-                    className="w-full aspect-[8/3] overflow-hidden bg-gray-100"
+                    className="w-full aspect-[5/3] overflow-hidden bg-gray-100"
                   />
                 ) : (
                   <div className="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-300">
