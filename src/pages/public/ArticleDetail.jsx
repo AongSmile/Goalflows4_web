@@ -43,7 +43,7 @@ const ArticleDetail = () => {
           <img
             src={article.images[0].secure_url}
             alt={article.name}
-            className="w-full h-full object-contain block"
+            className="w-full aspect-[5/3] object-contain block"
 
           />
         )}
