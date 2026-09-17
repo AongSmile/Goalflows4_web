@@ -28,7 +28,8 @@ const AllArticlesPage = () => {
                             <img
                                 src={`https://source.unsplash.com/600x400/?tech,${item.id}`}
                                 alt="article"
-                                className="w-full h-48 object-cover"
+                                {/* className="w-full h-48 object-cover" */}
+                                className="w-full h-full object-contain block"
                             />
 
                             <div className="p-4">
