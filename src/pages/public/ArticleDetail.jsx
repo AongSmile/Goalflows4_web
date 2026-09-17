@@ -43,9 +43,11 @@ const ArticleDetail = () => {
           <img
             src={article.images[0].secure_url}
             alt={article.name}
-            className="w-full h-64 md:h-80 object-cover"
+            className="w-full h-full object-contain block"
+
           />
         )}
+                    {/* className="w-full h-64 md:h-80 object-cover" */} ของเก่า
         <div className="p-6 md:p-10">
           <Link to="/Goalflows" className="text-sm text-gray-500 hover:text-[#003b6e]">
             &larr; กลับไปหน้าเกี่ยวกับโกลโฟล
