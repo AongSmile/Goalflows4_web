@@ -41,7 +41,7 @@ const ArticleSection = () => {
   "
       style={{ backgroundImage: `url(${bg1})` }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto p-10">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#003b6e]">
             {/* ข่าวสาร / บทความน่ารู้ */}
