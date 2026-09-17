@@ -65,14 +65,14 @@ const ArticleSection = () => {
                   <img
                     src={article.images[0].secure_url}
                     alt={article.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full aspect-[8/3] overflow-hidden bg-gray-100"
                   />
                 ) : (
                   <div className="w-full h-48 bg-gray-100 flex items-center justify-center text-gray-300">
                     ไม่มีรูปภาพ
                   </div>
                 )}
-
+                {/* className="w-full h-48 object-cover"ของเก่า */}
                 <div className="p-4 flex flex-col flex-1">
                   <h3 className="font-semibold text-lg text-[#003b6e] line-clamp-2">
                     {article.name}
