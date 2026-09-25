@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { getProducts, getCategoryMeta } from "../../api/productApi";
 import ProductSpecModal from "./ProductSpecModal";
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 8;
 
 const ProductList = () => {
   const { category, subcategory } = useParams();
