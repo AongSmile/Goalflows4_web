@@ -12,12 +12,12 @@ function Community() {
 
                 {/* LEFT */}
                 <div className="flex flex-col items-center md:items-start text-center md:text-left font-Sarabun">
-                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-10 text-center md:text-left leading-tight tracking-wide">
+                     <h1 className="text-4xl sm:text-5xl md:text-6xl text-white mb-10 text-center md:text-left leading-tight tracking-wide">
                         บริการ
                     </h1>
 
                     {/* DESCRIPTION */}
-                    <p className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mb-10 text-center md:text-left leading-tight tracking-wide">
+                    <p className="text-3xl sm:text-3xl md:text-4xl text-white mb-10 text-center md:text-left leading-tight tracking-wide">
                         ● ซ่อม / สอบเทียบ <br/>
                         ● อบรมการใช้งาน <br/>
                         ● บำรุงรักษาเครื่องมือ เครื่องจักร<br/>
