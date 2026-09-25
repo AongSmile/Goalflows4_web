@@ -11,7 +11,7 @@ function Community() {
             <div className="relative container mx-auto max-w-[1320px] px-6 py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
 
                 {/* LEFT */}
-                <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <div className="flex flex-col items-center md:items-start text-center md:text-left font-Sarabun">
                      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-10 text-center md:text-left leading-tight tracking-wide">
                         บริการ
                     </h1>
