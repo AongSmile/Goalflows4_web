@@ -2,7 +2,7 @@ import { Children, useState } from "react";
 import { FaLine, FaFacebook } from "react-icons/fa6";
 import { motion, useScroll, useTransform } from "framer-motion";
 import bgImage from "../assets/image/bg/PAGE05.png";
-import mitutoyo from "../assets/image/catalog/mitutoyo.png"
+import mitutoyo from "../assets/image/catalog/mitutoyo-map25.png"
 import cataloggf from "../assets/image/catalog/catalog-gf.png"
 
 export default function Contactus() {
@@ -44,7 +44,7 @@ export default function Contactus() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
               >
-                <a href="https://online.anyflip.com/yctny/nsao/mobile/index.html?1602822912753" target="_blank" rel="noopener noreferrer">Read me</a>
+                <a href="https://www.mitutoyo.com.sg/sg-en/e-catalogue/index.html" target="_blank" rel="noopener noreferrer">Read me</a>
               </motion.button>
             </div>
           </motion.div>
